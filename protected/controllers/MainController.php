@@ -2,10 +2,29 @@
 
 class MainController extends Controller
 {
+	public $itemsOnStringNumber=0;
+	const ITEMS_ON_STRING_MAIN_PAGE = 4;
+	public $openTeg=false;
 	public $layout = 'public';
 	public function actionIndex()
 	{
-		$this->render('index');
+		if(Yii::app()->getRequest()->getParam('category'))//меняет критерии в соответствии с GET параметром 'category', если он есть
+			$condition='category_id='.Yii::app()->getRequest()->getParam('category');
+	
+
+		$dataProvider=new CActiveDataProvider('IshopItem',array( 
+		'criteria'=>array(
+			'condition'=>$condition,
+		),
+		'pagination'=>array('pageSize'=>16),
+		
+		
+		
+		));
+		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+			));
+		//$this->render('index');
 	}
 	
 	public function actionBasket()
@@ -18,6 +37,7 @@ class MainController extends Controller
 	}
 	public function actionView($id)
 	{
+
 		$cookie = new CHttpCookie('itemNumber',$id);
 		$cookie ->expire = time() + 120*24*60*60;
 		Yii::app()->request->cookies[''] = $cookie ;

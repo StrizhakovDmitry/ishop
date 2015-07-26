@@ -9,7 +9,15 @@
         </div>
 <div class="row">
   <div class="span2"><?php echo $this->CategoriesMenu;?></div>
-  <div class="span10"><?php echo $this->ItemsBlock;?></div>
+  <div class="span8"><?php// echo $this->ItemsBlock;?>
+  	<?php $this->widget('zii.widgets.CListView', array(
+	'dataProvider'=>$dataProvider,
+	'itemView'=>'application.views.main._item',
+
+)); ?>
+  	
+  	
+  </div>
 
 
 </div>
