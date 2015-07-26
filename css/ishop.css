@@ -1,0 +1,162 @@
+.mainItemsTitle
+{
+	text-align:center;
+	height:40px;
+}
+.mainItemsString
+{
+	margin-top:20px;
+}
+.mainItemsPrice
+{
+	text-align:center;
+	height:10px;
+	padding:10px 0px 10px 0px;
+}
+
+
+
+
+
+.miniatureMainImage
+{
+	height:160px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+.miniature
+{
+	height:120px;
+	display: table-cell;
+	vertical-align: middle;
+	
+	
+}
+.miniature img
+{
+	width:90px;
+}
+
+
+
+
+
+
+@media print 
+{
+	.noPrint
+	{
+		display:none;
+	}
+	#OrderTFoot td
+	{
+		font-size:10px;
+	}
+	#thanksForOrder
+	{
+		display:none;
+		font-size:17px!important;
+	}
+	
+}
+
+
+#thanksForOrder
+{
+	font-size:20px;
+	margin-bottom:5px;
+}
+
+
+
+
+.fa-rub
+{
+	color:#CC9900;
+}
+#purchasesBtn
+{
+	 border-radius: 50%;
+	 height: 20px;
+}
+#purchasesBtnNumber
+{
+	position:relative;
+	top:-2px;
+}
+#totalPrice
+{
+	text-align:right;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	line-height: 20px;
+}
+#order
+{
+	//border:1px solid;
+	width:100%;
+}
+#order th
+{
+	border:1px solid;
+}
+#order th:nth-child(1)
+{
+	width:5%;
+}
+#order th:nth-child(2)
+{
+	width:5%;
+}
+#order th:nth-child(3)
+{
+	width:75%;
+}
+#order th:nth-child(4)
+{
+	text-align:center;
+	width:5%;
+}
+#order th:nth-child(5)
+{
+	width:10%;
+}
+#order td
+{
+	border:1px solid;
+}
+#order td:nth-child(1)
+{
+	text-align:center;
+}
+#order td:nth-child(2)
+{
+	text-align:center;
+}
+#order td:nth-child(4)
+{
+	text-align:center;
+}
+#order td:nth-child(5)
+{
+	text-align:center;
+}
+#order tfoot
+{
+	border: 0px;
+}
+#order tfoot tr
+{
+	border: 0px;
+}
+#order tfoot tr td
+{
+	border: 0px;
+}
+
+
+
+
+
+
