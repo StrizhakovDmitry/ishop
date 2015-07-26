@@ -21,9 +21,7 @@ class MainController extends Controller
 		$cookie = new CHttpCookie('itemNumber',$id);
 		$cookie ->expire = time() + 120*24*60*60;
 		Yii::app()->request->cookies[''] = $cookie ;
-		
-		
-		
+				
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
