@@ -99,8 +99,11 @@ class MainController extends Controller
 		else{
 		$PArray = CJSON::decode($cookie);
 		$HTML='';
-		$HTML.='<table class="table table-striped">';
-		$HTML.='<tr><th>Номер</th><th>Артикул</th><th>Название</th><th>Цена</th><th>Количество</th>';
+		$HTML.='<table class="table table-striped basketTable">';
+		$HTML.='<thead>';
+		$HTML.='<tr><th>Номер</th><th>Артикул</th><th>Название</th><th>Цена</th><th>Количество</th><th></th>';
+		$HTML.='</thead>';
+		$HTML.='<tbody>';
 		$num=0;
 		$totalPrice=0;
 		foreach ($PArray as $id =>$quantity){
@@ -108,11 +111,12 @@ class MainController extends Controller
 			//$totalPrice=$model->price;
 			$model = IshopItem::model()->findByPk($id);
 			$HTML.='<tr>';
-			$HTML.='<td>'.$num.'</td>'.'<td>'.$model->id.'</td><td>'.$model->title.'</td><td>'.$model->price.'</td><td>'.$quantity.'</td>';
+			$HTML.='<td>'.$num.'</td>'.'<td>'.$model->id.'</td><td>'.$model->title.'</td><td>'.$model->price.'</td><td>'.$quantity.'</td><td><img class="delelteIntemBasket" src="'.Yii::app()->request->baseUrl.'/images/cancel_128x128.png"></td>';
 			$tmpPrice=$model->price*$quantity;
 			$totalPrice+=$tmpPrice;
 			$HTML.='</tr>';
 		}
+		$HTML.='</tbody>';
 		$HTML.='</table>';
 		$HTML.='<h3 id="TotalPrice">Сумма: '.$totalPrice.' руб. </h3>';
 		return $HTML;

@@ -1,3 +1,25 @@
+.basketTable th:nth-child(5)
+{
+	width: 20px;
+}
+
+
+.basketTable th:nth-child(6)
+{
+	width: 20px;
+}
+
+
+
+.delelteIntemBasket
+{
+	height:20px;
+	cursor: pointer;
+}
+
+
+
+
 .mainItemsTitle
 {
 	text-align:center;
