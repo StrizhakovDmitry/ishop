@@ -7516,3 +7516,150 @@ Stack trace:
 REQUEST_URI=/ishop/main/index/category/1
 HTTP_REFERER=http://merk46.ru/ishop/main/index/category/5
 ---
+2015/07/27 03:18:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/m/merk46ru/public_html/ishop/protected/controllers/MainController.php:232
+Stack trace:
+#0 /home/m/merk46ru/public_html/ishop/protected/controllers/MainController.php(46): MainController->loadModel('245')
+#1 [internal function]: MainController->actionView('245')
+#2 /home/m/merk46ru/public_html/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(MainController), Array)
+#3 /home/m/merk46ru/public_html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(MainController), Object(ReflectionMethod), Array)
+#4 /home/m/merk46ru/public_html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/m/merk46ru/public_html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/m/merk46ru/public_html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(287): CController->run('view')
+#8 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(143): CWebApplication->runController('main/view/id/24...')
+#9 /home/m/merk46ru/public_html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/m/merk46ru/public_html/ishop/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ishop/main/view/id/245
+---
+2015/07/27 06:26:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/m/merk46ru/public_html/ishop/protected/controllers/MainController.php:232
+Stack trace:
+#0 /home/m/merk46ru/public_html/ishop/protected/controllers/MainController.php(46): MainController->loadModel('245')
+#1 [internal function]: MainController->actionView('245')
+#2 /home/m/merk46ru/public_html/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(MainController), Array)
+#3 /home/m/merk46ru/public_html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(MainController), Object(ReflectionMethod), Array)
+#4 /home/m/merk46ru/public_html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/m/merk46ru/public_html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/m/merk46ru/public_html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(287): CController->run('view')
+#8 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(143): CWebApplication->runController('main/view/id/24...')
+#9 /home/m/merk46ru/public_html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/m/merk46ru/public_html/ishop/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ishop/main/view/id/245
+---
+2015/07/27 06:58:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/m/merk46ru/public_html/ishop/protected/controllers/MainController.php:232
+Stack trace:
+#0 /home/m/merk46ru/public_html/ishop/protected/controllers/MainController.php(46): MainController->loadModel('243')
+#1 [internal function]: MainController->actionView('243')
+#2 /home/m/merk46ru/public_html/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(MainController), Array)
+#3 /home/m/merk46ru/public_html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(MainController), Object(ReflectionMethod), Array)
+#4 /home/m/merk46ru/public_html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/m/merk46ru/public_html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/m/merk46ru/public_html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(287): CController->run('view')
+#8 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(143): CWebApplication->runController('main/view/id/24...')
+#9 /home/m/merk46ru/public_html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/m/merk46ru/public_html/ishop/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ishop/main/view/id/243
+---
+2015/07/27 19:28:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "item".' in /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php:291
+Stack trace:
+#0 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(143): CWebApplication->runController('item')
+#1 /home/m/merk46ru/public_html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/m/merk46ru/public_html/ishop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ishop/item
+---
+2015/07/28 06:30:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/m/merk46ru/public_html/ishop/protected/controllers/MainController.php:232
+Stack trace:
+#0 /home/m/merk46ru/public_html/ishop/protected/controllers/MainController.php(46): MainController->loadModel('245')
+#1 [internal function]: MainController->actionView('245')
+#2 /home/m/merk46ru/public_html/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(MainController), Array)
+#3 /home/m/merk46ru/public_html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(MainController), Object(ReflectionMethod), Array)
+#4 /home/m/merk46ru/public_html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/m/merk46ru/public_html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/m/merk46ru/public_html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(287): CController->run('view')
+#8 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(143): CWebApplication->runController('main/view/id/24...')
+#9 /home/m/merk46ru/public_html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/m/merk46ru/public_html/ishop/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ishop/main/view/id/245
+---
+2015/07/28 19:16:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "items".' in /home/m/merk46ru/public_html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /home/m/merk46ru/public_html/yii/framework/web/CController.php(270): CController->missingAction('items')
+#1 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(287): CController->run('items')
+#2 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(143): CWebApplication->runController('site/items')
+#3 /home/m/merk46ru/public_html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/m/merk46ru/public_html/ishop/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/ishop/site/items
+---
+2015/07/28 19:22:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ishop".' in /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php:291
+Stack trace:
+#0 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(143): CWebApplication->runController('ishop')
+#1 /home/m/merk46ru/public_html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/m/merk46ru/public_html/ishop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ishop/ishop/
+---
+2015/07/28 19:31:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "site".' in /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php:291
+Stack trace:
+#0 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(143): CWebApplication->runController('site')
+#1 /home/m/merk46ru/public_html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/m/merk46ru/public_html/ishop/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ishop/site/
+---
+2015/07/28 20:49:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/m/merk46ru/public_html/ishop/protected/controllers/MainController.php:232
+Stack trace:
+#0 /home/m/merk46ru/public_html/ishop/protected/controllers/MainController.php(46): MainController->loadModel('243')
+#1 [internal function]: MainController->actionView('243')
+#2 /home/m/merk46ru/public_html/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(MainController), Array)
+#3 /home/m/merk46ru/public_html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(MainController), Object(ReflectionMethod), Array)
+#4 /home/m/merk46ru/public_html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/m/merk46ru/public_html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/m/merk46ru/public_html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(287): CController->run('view')
+#8 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(143): CWebApplication->runController('main/view/id/24...')
+#9 /home/m/merk46ru/public_html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/m/merk46ru/public_html/ishop/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ishop/main/view/id/243
+---
+2015/07/29 14:40:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/m/merk46ru/public_html/ishop/protected/controllers/MainController.php:232
+Stack trace:
+#0 /home/m/merk46ru/public_html/ishop/protected/controllers/MainController.php(46): MainController->loadModel('243')
+#1 [internal function]: MainController->actionView('243')
+#2 /home/m/merk46ru/public_html/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(MainController), Array)
+#3 /home/m/merk46ru/public_html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(MainController), Object(ReflectionMethod), Array)
+#4 /home/m/merk46ru/public_html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /home/m/merk46ru/public_html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#6 /home/m/merk46ru/public_html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(287): CController->run('view')
+#8 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(143): CWebApplication->runController('main/view/id/24...')
+#9 /home/m/merk46ru/public_html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/m/merk46ru/public_html/ishop/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ishop/main/view/id/243
+---
+2015/07/29 17:17:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in /home/m/merk46ru/public_html/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /home/m/merk46ru/public_html/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), '?? ?????? ?????...')
+#1 /home/m/merk46ru/public_html/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/m/merk46ru/public_html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /home/m/merk46ru/public_html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/m/merk46ru/public_html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/m/merk46ru/public_html/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/m/merk46ru/public_html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(287): CController->run('logout')
+#8 /home/m/merk46ru/public_html/yii/framework/web/CWebApplication.php(143): CWebApplication->runController('site/logout')
+#9 /home/m/merk46ru/public_html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/m/merk46ru/public_html/ishop/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/ishop/site/logout
+HTTP_REFERER=http://merk46.ru/ishop/items/
+---

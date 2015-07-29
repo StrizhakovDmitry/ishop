@@ -8,6 +8,39 @@ class SiteController extends Controller
 	public $layout = 'public';
 	public $i=0;
 	public $openTeg=false;
+	public function accessRules()
+	{
+		return array(
+		
+			array('allow', // allow admin user to perform 'admin' and 'delete' actions
+				'actions'=>array('admin','delete','index','view','contact','login'),
+				'users'=>array('admin'),
+			),
+			array('allow',  // deny all users
+				'actions'=>array('login','logout'),
+				'users'=>array('*'),
+			),
+			
+			
+			
+			
+			array('deny',  // deny all users
+				//'actions'=>array('*'),
+				'users'=>array('*'),
+			),
+		);
+	}
+	public function filters()
+	{
+		return array(
+			'accessControl', // perform access control for CRUD operations
+			'postOnly + delete', // we only allow deletion via POST request
+		);
+	}
+
+	
+	
+	
 	public function actions()
 	{
 		return array(
@@ -33,6 +66,11 @@ class SiteController extends Controller
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		//$this->render('index');
+		//header('location:/ishop/main/');
+		
+		
+		
+		
 		$dataProvider=new CActiveDataProvider('IshopItem');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
