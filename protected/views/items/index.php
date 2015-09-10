@@ -2,22 +2,22 @@
 /* @var $this ItemsController */
 /* @var $dataProvider CActiveDataProvider */
 
-$this->breadcrumbs=array(
-	'Ishop Items',
+$this->breadcrumbs = array(
+    'Ishop Items',
 );
 
-$this->menu=array(
-	array('label'=>'Create IshopItem', 'url'=>array('create')),
-	array('label'=>'Manage IshopItem', 'url'=>array('admin')),
+$this->menu = array(
+    array('label' => 'Create IshopItem', 'url' => array('create')),
+    array('label' => 'Manage IshopItem', 'url' => array('admin')),
 );
 ?>
 <?
 
 ?>
 
-<h1>Ishop Items</h1>
+<h1>Товары</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
+    'dataProvider' => $dataProvider,
+    'itemView' => '_view',
 )); ?>
